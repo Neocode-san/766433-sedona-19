@@ -1,14 +1,17 @@
+@import "blocks/nav-menu.scss";
+@import "blocks/page-main.scss";
+@import "blocks/features.scss";
+@import "blocks/page-footer.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
-  background-color: #f2f2f2;
-}
-
-.page-header {
-  background-color: white;
 }

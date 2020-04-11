@@ -1,0 +1,26 @@
+.site-list__item {
+  background-color: #81b3d2;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-nav__toggle {
+  &::after {
+    content: "";
+    background-image: url(../img/icon-menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+  }
+}
