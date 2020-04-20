@@ -9,68 +9,84 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="#">Html Academy</a></li>
+    <nav class="page-header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
+        <li class="menu__item"><a class="menu__link" href="form.html">Форма отзыва</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Html Academy</a></li>
       </ul>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="menu__toggle" type="button"></button>
     </nav>
-    <a href="index.html" class="page-header__logo"><img src="../source/img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83" class="page-header__logo-image"></a>
-    <img src="../source/img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Каньон в Седоне" class="page-header__background-image">
-    <img src="../source/img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону" class="page-header__background-text">
-    <img src="../source/img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="Декоративный элемент для фона" class="page-header__background-mask">
+    <a href="index.html" class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип города Седона" width="102" height="83">
+    </a>
+    <div class="page-header__banner banner">
+      <img class="banner__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Каньон в Седоне">
+      <img class="banner__background-text" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+      <img class="banner__background-mask" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="Декоративный элемент для фона">
+    </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-    <p class="page-main__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <div class="page-main__title title">
+    <h1 class="title__heading heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <p class="title__paragraph paragraph paragraph--big">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
     <section class="features">
-      <div class="features__item">
-        <h2 class="features__title">настоящий городок</h2>
-        <span class="features__number">— №1 —</span>
-        <span class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</span>
-        <img src="../source/img/main-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж Седоны" class="features__feature-image">
+      <div class="features__item feature">
+        <div class="feature__text-container text-container">
+        <span class="text-container__title heading heading--white">настоящий городок</span>
+        <span class="text-container__number paragraph paragraph--white">— №1 —</span>
+        <p class="text-container__description paragraph paragraph--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <div class="features__small-features">
-        <ul class="features__small-features-list">
-          <li class="features__small-features-item">
-            <span class="small-features-title">Жилье</span>
-            <p class="small-features-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <img class="feature__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж Седоны">
+      </div>
+      <div class="features__small-features small-features small">
+        <ul class="small-features__list">
+          <li class="small-features__item">
+            <span class="small-features__title heading heading--left">Жилье</span>
+            <p class="small-features__paragraph paragraph paragraph--left">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="features__small-features-item">
-            <span class="small-features-title">Сувениры</span>
-            <p class="small-features-paragraph">Не только китайского, но и местного производства!</p>
+          <li class="small-features__item">
+            <span class="small-features__title heading heading--left">Сувениры</span>
+            <p class="small-features__paragraph paragraph paragraph--left">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="features__small-features-item">
-            <span class="small-features-title">Еда</span>
-            <p class="small-features-paragraph">Всегдай заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="small-features__item">
+            <span class="small-features__title heading heading--left">Еда</span>
+            <p class="small-features__paragraph paragraph paragraph--left">Всегдай заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </div>
-      <div class="features__item">
-        <h2 class="features__title">Там есть мост дьявола</h2>
-        <span class="features__number">— №2 —</span>
-        <span class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</span>
-        <img src="../source/img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография каньона в Седоне" class="features__feature-image">
+      <div class="features__item feature">
+        <div class="feature__text-container text-container">
+        <span class="text-container__title heading heading--white">Там есть мост дьявола</span>
+        <span class="text-container__number paragraph paragraph--white">— №2 —</span>
+        <p class="text-container__description paragraph paragraph--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
-      <div class="features__other-features">
-        <ul class="features__other-features-list">
-          <li class="features__other-features-item">
-            <span class="other-features-title">Небольшая площадь</span>
-            <span class="other-features-number">— №3 —</span>
-            <p class="other-features-paragraph">Все интересные места находятся очень близко</p>
+        <img class="feature__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография каньона в Седоне">
+      </div>
+      <div class="features__other-features other-features">
+        <ul class="other-features__list">
+          <li class="other-features__item">
+            <div class="other-features__text-container text-container text-container--grey">
+            <span class="text-container__title heading">Небольшая площадь</span>
+            <span class="text-container__number paragraph">— №3 —</span>
+            <p class="text-container__description paragraph">Все интересные места находятся очень близко</p>
+            </div>
           </li>
-          <li class="features__other-features-item">
-            <span class="other-features-title">Красивая дорога</span>
-            <span class="other-features-number">— №4 —</span>
-            <p class="other-features-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="other-features__item">
+            <div class="other-features__text-container text-container text-container--grey">
+            <span class="text-container__title heading">Красивая дорога</span>
+            <span class="text-container__number paragraph">— №4 —</span>
+            <p class="text-container__description paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
-          <li class="features__other-features-item">
-            <span class="other-features-title">Мало туристов</span>
-            <span class="other-features-number">— №5 —</span>
-            <p class="other-features-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="other-features__item">
+            <div class="other-features__text-container text-container text-container--grey">
+            <span class="text-container__title heading ">Мало туристов</span>
+            <span class="text-container__number paragraph">— №5 —</span>
+            <p class="text-container__description paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
           </li>
 
         </ul>

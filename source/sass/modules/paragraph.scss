@@ -1,0 +1,18 @@
+.paragraph {
+    text-align: center;
+    color: $text-grey;
+    &--big {
+      line-height: 26px;
+    }
+    &--white {
+      color: $text-white;
+    }
+    &--left {
+      text-align: left;
+    }
+    &--photo {
+      text-align: left;
+      line-height: 24px;
+      text-transform: none;
+    }
+}

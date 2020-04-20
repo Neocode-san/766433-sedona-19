@@ -1,20 +1,16 @@
-.site-list__item {
-  background-color: #81b3d2;
+.menu__item {
+  background-color: $bg-lightblue;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
 }
 
-.main-nav__list {
-  list-style: none;
-}
-
-.site-list__link {
+.menu__link {
   text-decoration: none;
-  color: #ffffff;
+  color: $text-white;
 }
 
-.main-nav__toggle {
+.menu__toggle {
   &::after {
     content: "";
     background-image: url("../img/icon-menu.svg");
@@ -22,5 +18,6 @@
     background-repeat: no-repeat;
     width: 23px;
     height: 21px;
+    display: block;
   }
 }
